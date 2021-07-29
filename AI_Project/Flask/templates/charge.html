@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>loan</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="paidcss.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
+    
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            header {
+                position: relative;
+                background-color: black;
+                height: 100vh;
+                min-height: 25rem;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            header video {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                min-width: 100%;
+                min-height: 100%;
+                width: auto;
+                height: auto;
+                z-index: 0;
+                -ms-transform: translateX(-50%) translateY(-50%);
+                -moz-transform: translateX(-50%) translateY(-50%);
+                -webkit-transform: translateX(-50%) translateY(-50%);
+                transform: translateX(-50%) translateY(-50%);
+            }
+
+            header .container {
+                position: relative;
+                z-index: 2;
+            }
+
+            header .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: black;
+                opacity: 0.5;
+                z-index: 0;
+            }
+
+            @media (pointer: coarse) and (hover: none) {
+              header {
+                  background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+                }
+             header video 
+               {
+                 display: none;
+                }
+
+            }
+
+            .fo {
+
+                font-size: 40px;
+                position: absolute;
+                left: 400px;
+                top: 20px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: 1000;
+                text-shadow: 2px 2px 5px yellow;
+                color: white;
+            
+
+            }
+            .pre {
+
+                font-size: 40px;
+                position: absolute;
+                left: 650px;
+                top: 200px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: 1000;
+                color: lime;
+
+
+            }
+            .hey {
+
+            
+                position: absolute;
+                left: 300px;
+                top: 300px;
+                font-family: 'Times New Roman', Times, serif;
+            } 
+    
+            @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+            body {
+            background: #111;
+            font-family: "Open Sans",  Impact;
+            }
+
+            .area {
+            text-align: center;
+            font-size: 6.5em;
+            color: #fff;
+            letter-spacing: -7px;
+            font-weight: 700;
+            text-transform: uppercase;
+            animation: blur .75s ease-out infinite;
+            text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+            }
+
+            @keyframes blur {
+            from {
+                text-shadow:0px 0px 10px #fff,
+                0px 0px 10px #fff, 
+                0px 0px 25px #fff,
+                0px 0px 25px #fff,
+                0px 0px 25px #fff,
+                0px 0px 25px #fff,
+                0px 0px 25px #fff,
+                0px 0px 25px #fff,
+                0px 0px 50px #fff,
+                0px 0px 50px #fff,
+                0px 0px 50px #7B96B8,
+                0px 0px 150px #7B96B8,
+                0px 10px 100px #7B96B8,
+                0px 10px 100px #7B96B8,
+                0px 10px 100px #7B96B8,
+                0px 10px 100px #7B96B8,
+                0px -10px 100px #7B96B8,
+                0px -10px 100px #7B96B8;
+            }
+            }
+
+            .buttonload {
+                background-color: #04AA6D; /* Green background */
+                border: none; /* Remove borders */
+                color: white; /* White text */
+                padding: 12px 24px; /* Some padding */
+                font-size: 30px;
+                 
+            }
+
+                /* Add a right margin to each icon */
+            .fa {
+                margin-left: -12px;
+                margin-right: 8px;
+            }     
+            
+            
+
+            @import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+            
+
+         
+
+            .hai{
+             animation: glitch 1s linear infinite;
+            }
+
+            @keyframes glitch{
+            2%,64%{
+                transform: translate(2px,0) skew(0deg);
+            }
+            4%,60%{
+                transform: translate(-2px,0) skew(0deg);
+            }
+            62%{
+                transform: translate(0,0) skew(5deg); 
+            }
+            }
+
+            .hai:before,
+            .hai:after{
+                content: attr(title);
+                position: absolute;
+                left: 0;
+            }
+
+            .hai:before{
+                animation: glitchTop 1s linear infinite;
+                clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+                -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+            }
+
+            @keyframes glitchTop{
+            2%,64%{
+                transform: translate(2px,-2px);
+            }
+            4%,60%{
+                transform: translate(-2px,2px);
+            }
+            62%{
+                transform: translate(13px,-1px) skew(-13deg); 
+            }
+            }
+
+            .hai:after{
+                animation: glitchBotom 1.5s linear infinite;
+                clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+                -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+            }
+
+            @keyframes glitchBotom{
+            2%,64%{
+                transform: translate(-2px,0);
+            }
+            4%,60%{
+                transform: translate(-2px,0);
+            }
+            62%{
+                transform: translate(-22px,5px) skew(21deg); 
+            }
+            }
+        
+
+
+    
+       </style>
+    </head>
+
+
+
+    <body>
+        <header>
+            <div class="overlay"></div>
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="https://static.videezy.com/system/resources/previews/000/043/876/original/200129_01_Plexus-human-body-white-on-blue.mp4" type="video/mp4">
+            </video>
+            <div class="container h-100">
+            <div class="nice">
+                <div class="fo hai">
+                   <div title="LOAN STATUS WEB APP USING ANN">
+                      LOAN STATUS WEB APP USING ANN
+                    </div>
+                
+
+        
+                   
+                </div>
+                <div class="pre">
+                   <button class="buttonload">
+                       <i class="fa fa-circle-o-notch fa-spin"></i>
+                         <font face="Algerian">PREDICTION : </font>
+ 
+                    </button>
+                    
+                </div>
+               
+
+                <div class="area hey">⚠ CHARGED OFF ⚠</div>
+
+            </div>
+            </div>
+        </header>
+    </body>
+      
+    
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> AI BANK</title>
+        <link rel="stylesheet" href="mystyle.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <style>
+          .button {
+            display: inline-block;
+            border-radius: 3px;
+            background-color: #f4511e;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 25px;
+            padding: 15px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+          }
+          
+          .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+          }
+          
+          .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+          }
+          
+          .button:hover span {
+            padding-right: 25px;
+          }
+          
+          .button:hover span:after {
+            opacity: 1;
+            right: 0;
+          }
+
+          input[type=text], select {
+              width: 50%;
+              padding: 12px 20px;
+              margin: 8px 0;
+              display: inline-block;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
+              
+          }
+          
+          header {
+            background: #1abc9c;
+            padding: 1px;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+          }
+         
+          
+          .left {
+            width: 50%;
+          }
+          .right {
+            width: 50%;
+          }
+          .row {
+            display: flex;
+          }
+          .column {
+            flex: 50%;
+            padding: 10px;
+            
+          }
+          .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+          }
+          .head {
+            position: relative;
+            background-color: black;
+            height: 100vh;
+            min-height: 25rem;
+            width: 100%;
+            overflow: hidden;
+          }
+
+          .head video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 0;
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+          }
+
+          .head .container {
+            position: relative;
+            z-index: 2;
+          }
+
+          .head .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.5;
+            z-index: 1;
+          }
+          h2 {
+            font-family: "Times New Roman", Times, serif;
+            color: white;
+          }
+          body {
+            margin: 0;
+          }
+          h3{
+            font-family: "Times New Roman", Times, serif;
+            color: white;
+          }
+          
+          
+         
+
+
+
+
+        
+        </style>
+           
+        
+
+</head>
+    
+<body>
+  <header>
+    <h2>LOAN STATUS PREDICTIONS</h2>
+  </header>
+
+
+  
+  
+  <form action = "/login" method = "post">
+    
+    <div class="head" >
+      
+      <video src="https://giant.gfycat.com/WetTidyIndianabat.mp4" muted loop autoplay></video>
+      <div class="overlay"></div>
+      <div > 
+        <div class = "row container">
+          <div class="column" style = "position:relative; left:250px; top:2px;">
+            <h3>Enter Your Current Loan Amount</h3>
+            <p> <input class="form-input"  type = "text" name = "Loan Amount" placeholder="Loan Ammount" required="required" /></p>
+
+            <h3>Enter The Term Type</h3>
+            
+            <select id="Term" name="Term">
+              <option value="">Select the Term</option>
+              <option value="1">Long Term</option>
+              <option value="0">Short Term</option>
+            </select>
+
+            <h3>Enter Your credit score </h3>
+            <p> <input class="form-input"  type = "text" name = "Credit score"  placeholder="Years At Work" required="required"/></p>
+            
+
+            <h3>Enter Your Annual Income</h3> 
+            <p><input class="form-input"  type="text" name="Annual Income" placeholder="Annual Income" required="required"></p>
+            
+
+
+            <h3>Enter Your Years At Work</h3> 
+            <p><input class="form-input" type="text" name="Years at work" placeholder="Years At Work" required="required"></p>
+            
+
+          </div>
+          
+          <div class="column" style = "position:relative; left:80px; top:2px;">
+            <h3>Enter Your Home Ownership Type</h3>
+    
+            <select id="Home Ownership" name="Home Ownership">
+                <option value="">Select an Option</option>
+                <option value="0">HaveMortgage</option>
+                <option value="2">Own Home</option>
+                <option value="3">Rent</option>
+                <option value="1">Home Mortgage</option>
+            </select>
+
+
+            <h3>Enter Your Credit History </h3>
+            <input class="form-input" type="text" name="Years of Credit History" placeholder="Credit History">
+
+            <h3>Enter Your Number of Credit Issues</h3>
+            <input class="form-input" type="text" name="Number of Credit Problems" placeholder="Credit Issues" required="required">
+
+            <h3>Enter If Any Bankruptcies</h3>
+            <input class="form-input" type="text" name="Bankruptcies" placeholder="Bankruptcies" required="required">
+
+
+            <h3>Enter Your TaxLiens</h3> 
+            <input class="form-input" type="text" name="Tax Liens" placeholder="Tax Liens" required="required">
+
+            <div>
+              <p><input  type = "submit" value = "SUBMIT" class="button" style="vertical-align:middle"/></p>
+            </div>
+          </div>
+         
+         
+        </div>
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+    
+    
+  </form>
+
+
+</body>
+</html>
